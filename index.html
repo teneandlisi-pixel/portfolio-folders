@@ -4529,7 +4529,7 @@ function closeFolder() {
   grid.classList.remove('in-folder');
   const ctrls = document.getElementById('folders-controls');
   if (ctrls) ctrls.classList.remove('hidden');
-  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  document.getElementById('view-folders')?.scrollIntoView({ behavior: 'instant', block: 'start' });
 }
 
 function openFolder(groupId) {
@@ -4601,7 +4601,7 @@ function openFolder(groupId) {
   grid.appendChild(filesEl);
   const ctrls = document.getElementById('folders-controls');
   if (ctrls) ctrls.classList.add('hidden');
-  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  document.getElementById('view-folders')?.scrollIntoView({ behavior: 'instant', block: 'start' });
 
   filesEl.querySelectorAll('.folder-file').forEach(node => {
     const open = () => openProject(Number(node.dataset.idx));
