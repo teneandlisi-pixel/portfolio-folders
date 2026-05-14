@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio-folders",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "serve", "--no-clipboard", "--listen", "8768", "--config", ".claude/serve.json"],
+      "port": 8768
+    }
+  ]
+}

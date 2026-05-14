@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-folders",
+  "version": "1.0.0",
+  "description": "Public demo portfolio · Folders view",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 8768",
+    "preview": "python3 -m http.server 8768"
+  },
+  "keywords": ["portfolio", "design", "demo", "Folders"],
+  "author": "demo",
+  "license": "UNLICENSED"
+}

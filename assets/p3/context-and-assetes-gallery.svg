@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9c6e4"/>
+      <stop offset="1" stop-color="#8d6db0"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#1a1a1a" opacity=".10"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <rect width="100%" height="100%" fill="url(#dots)"/>
+  <g transform="translate(480, 360)" fill="#1a1a1a">
+    <text x="0" y="0" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="500" letter-spacing="3" opacity=".55">IMAGE · P3</text>
+    <text x="0" y="80" font-family="'Source Serif 4', Georgia, serif" font-size="68" font-weight="600">Insights Surface</text>
+    <text x="0" y="140" font-family="Inter, system-ui, sans-serif" font-size="26" opacity=".7">Themed feed by signal</text>
+    <text x="0" y="220" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="18" opacity=".5">sample · public demo</text>
+  </g>
+  <g transform="translate(60, 60)" color="#1a1a1a"><circle cx="46" cy="46" r="10" fill="currentColor" opacity=".55"/><path d="M14 78 L36 50 L52 64 L70 42 L86 78 Z" fill="currentColor" opacity=".55"/></g>
+</svg>
