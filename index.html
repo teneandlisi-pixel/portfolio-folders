@@ -68,20 +68,19 @@
   }
   html.snap-y {
     scroll-snap-type: y mandatory;
-    scroll-padding-bottom: 200px;
   }
-  #view-timeline.active > .intro-hero {
+  .intro-block {
+    min-height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
-  #view-timeline.active > .stage {
-    scroll-snap-align: end;
+  #view-folders.active {
+    min-height: 100vh;
+    scroll-snap-align: start;
     scroll-snap-stop: always;
   }
   .view { display: none; }
   .view.active { display: block; }
-  #view-timeline.active { display: flex; flex-direction: column; min-height: 100vh; }
-  body:not(.view-timeline) .hint { display: none; }
 
   /* ── top bar ──────────────────────────────── */
   .topbar {
@@ -4637,7 +4636,7 @@ function setView(v) {
   }
   currentView = v;
   document.body.className = 'view-' + v;
-  document.documentElement.classList.toggle('snap-y', v === 'timeline');
+  document.documentElement.classList.toggle('snap-y', v === 'folders');
   document.querySelectorAll('.view').forEach(n => {
     n.classList.toggle('active', n.id === 'view-' + v);
   });
